@@ -1,0 +1,8 @@
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\obj\Debug\modul4_1302213117.csproj.AssemblyReference.cache
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\obj\Debug\modul4_1302213117.csproj.SuggestedBindingRedirects.cache
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\obj\Debug\modul4_1302213117.csproj.CoreCompileInputs.cache
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\bin\Debug\modul4_1302213117.exe.config
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\bin\Debug\modul4_1302213117.exe
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\bin\Debug\modul4_1302213117.pdb
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\obj\Debug\modul4_1302213117.exe
+E:\GIT\modul4_1302213117\modul4_1302213117\modul4_1302213117\obj\Debug\modul4_1302213117.pdb
