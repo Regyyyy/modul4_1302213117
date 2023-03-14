@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Regy Renanda Rahman 1302213117 SE-45-03
+
 namespace modul4_1302213117
 {
     internal class Program
@@ -14,6 +16,10 @@ namespace modul4_1302213117
             KodeBuah Buah = new KodeBuah();
             Console.WriteLine("Buah Kurma");
             Console.WriteLine("Kode Buah: " + Buah.getKodeBuah(KodeBuah.buah.Kurma));
+            //commit terakhir
+            Console.WriteLine("===============================");
+            PosisiKarakterGame game = new PosisiKarakterGame();
+            game.Bermain();
         }
     }
 
@@ -29,6 +35,60 @@ namespace modul4_1302213117
             "F00", "H00", "I00", "J00", "K00", "L00", "M00", "N00",
             "O00"};
             return kodeBuah[(int)Buah];
+        }
+    }
+
+    public class PosisiKarakterGame
+    {
+        enum State
+        {
+            Berdiri,
+            Terbang,
+            Jongkok,
+            Tengkurap
+        }
+        public void Bermain()
+        {
+            Console.WriteLine("Input: TombolS | TombolW | TombolX");
+            State state = State.Berdiri;
+            string[] kondisi = { "Berdiri", "Terbang", "Jongkok", "Tengkurap" };
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Status karakter : " + kondisi[(int)state]);
+                Console.Write("Tekan : ");
+                string tombol = Console.ReadLine();
+                if (tombol == "TombolS")
+                {
+                    Console.WriteLine("Tombol arah bawah ditekan");
+                    if (state == State.Berdiri)
+                    {
+                        state = State.Jongkok;
+                    } else if (state == State.Terbang)
+                    {
+                        state = State.Berdiri;
+                    } else if (state == State.Jongkok)
+                    {
+                        state = State.Tengkurap;
+                    }
+                } else if (tombol == "TombolW")
+                {
+                    Console.WriteLine("Tombol arah atas ditekan");
+                    if (state == State.Berdiri)
+                    {
+                        state = State.Terbang;
+                    } else if (state == State.Jongkok)
+                    {
+                        state = State.Berdiri;
+                    } else if (state == State.Tengkurap)
+                    {
+                        state = State.Jongkok;
+                    }
+                } else if (tombol == "TombolX" && state == State.Terbang)
+                {
+                    state = State.Jongkok;
+                }
+            }
+            Console.WriteLine("Status karakter : " + kondisi[(int)state]);
         }
     }
 }
